@@ -23,14 +23,14 @@ function App() {
   ]
 
   const [shoppinglist, setShoppingList] = useState(ShoppingProducts)
-  const [ShoppingItem, setShopping] = useState()
+  const [ShoppingItem, setShopping] = useState({title: "", number: ""})
   
 
   return (
     <main id="container">
       <h1>Handleliste</h1>
-      <AddForm ShoppingItem={ShoppingItem} setShopping={setShopping} setShoppingList={setShoppingList} shoppinglist={shoppinglist}/>
-      <ShoppingList ShoppingProducts={shoppinglist} />
+      <AddForm ShoppingItem={ShoppingItem} setShopping={setShopping} setShoppingList={setShoppingList} />
+      <ShoppingList ShoppingProducts={shoppinglist} setShoppingList={setShoppingList}/>
     </main>
   )
 }

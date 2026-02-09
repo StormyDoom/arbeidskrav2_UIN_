@@ -1,4 +1,4 @@
-export default function AddForm({setShopping, setShoppingList, shoppinglist}){
+export default function AddForm({ShoppingItem, setShopping, setShoppingList,}){
     
     const handleChange = (e) =>{
         const {name, value} = e.target
@@ -11,15 +11,15 @@ export default function AddForm({setShopping, setShoppingList, shoppinglist}){
     const handleClick = (e)=>{
         e.preventDefault()
         const uniqId = crypto.randomUUID()
-        setShoppingList((prev) =>([...prev, {id:uniqId,...shoppinglist}]))
+        setShoppingList((prev) =>([...prev, {id:uniqId,...ShoppingItem}]))
     }
 
     return (
         <form className="form" onSubmit={handleClick}>
             <label>Vare</label>
-            <input name="title" type="text" placeholder="Egg.." required onChange={handleChange}></input>
-            <label>Antall</label>
-            <input name="number" type="number" placeholder="2" min="1" required onChange={handleChange}></input>
+            <input name="title" type="text" placeholder="Egg.." required value={ShoppingItem.title} onChange={handleChange}></input>
+            <label>Antall</label> 
+            <input name="number" type="number" placeholder="2" min="1" required onChange={handleChange} value={ShoppingItem.number}></input>
             <button className="submit-btn">Legg til vare</button>
         </form>
     )
