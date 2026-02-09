@@ -1,0 +1,44 @@
+#container{
+    max-width: 400px;
+    margin: 0;
+    padding: 20px;
+    color: black;
+    background-color: #FFFF;
+    border-radius: 30px;
+    text-align: left;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form input{
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.products{
+    display: flex;
+    align-items: center;
+}
+
+.total-right{
+    display: flex;
+    text-align: right;
+    border: 1px solid;
+    max-width: 500px;
+    padding: 5px;
+    border-radius: none;
+    background-color: #FFFF;
+    color: black;
+    border: none;
+}

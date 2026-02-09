@@ -1,9 +1,10 @@
-export default function ShoppingItem({title, number}){
+
+export default function ShoppingItem({title}){
     return (
         <article className="products">
-            <h2>{title}</h2>
-            <p>{number}</p>
             <input type="checkbox"></input>
+            <p>{title}</p>
+            <input className="total-right" name="total" type="number" min={1} placeholder="1"></input>
         </article>
     )
 }

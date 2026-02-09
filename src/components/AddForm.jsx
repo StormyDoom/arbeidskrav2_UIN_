@@ -1,11 +1,11 @@
 export default function AddForm(){
     return (
-        <form>
-            <label htmlFor="producttitle">Vare</label>
+        <form className="form">
+            <label>Vare</label>
             <input name="title" type="text" placeholder="Egg.." required></input>
-            <label htmlFor="totaltitle">Antall</label>
-            <input name="total" type="number" placeholder="2" min="1" required></input>
-            <button>Legg til vare</button>
+            <label>Antall</label>
+            <input name="number" type="number" placeholder="2" min="1" required></input>
+            <button className="submit-btn">Legg til vare</button>
         </form>
     )
 }
