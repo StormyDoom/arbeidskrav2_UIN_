@@ -31,7 +31,7 @@ function App() {
     <main id="container">
       <h1>Handleliste</h1>
       <AddForm />
-      <ShoppingList ShoppingProducts={shoppinglist} />
+      <ShoppingList ShoppingProducts={shoppinglist} setShoppingList={setShoppingList}/>
     </main>
   )
 }
