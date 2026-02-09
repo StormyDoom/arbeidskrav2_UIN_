@@ -14,24 +14,23 @@ function App() {
       id: 0,
       title: "Melk",
       number: "2",
-      isSelected: false,
     },
     {
       id: 1,
       title: "Egg",
       number: "1",
-      isSelected: true
     }
   ]
 
   const [shoppinglist, setShoppingList] = useState(ShoppingProducts)
+  const [ShoppingItem, setShopping] = useState()
   
 
   return (
     <main id="container">
       <h1>Handleliste</h1>
-      <AddForm />
-      <ShoppingList ShoppingProducts={shoppinglist} setShoppingList={setShoppingList}/>
+      <AddForm ShoppingItem={ShoppingItem} setShopping={setShopping} setShoppingList={setShoppingList} shoppinglist={shoppinglist}/>
+      <ShoppingList ShoppingProducts={shoppinglist} />
     </main>
   )
 }
