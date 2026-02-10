@@ -4,8 +4,6 @@ export default function AddForm({ShoppingItem, setShopping, setShoppingList,}){
         const {name, value} = e.target
         
         setShopping((prev) => ({...prev,[name]: value}))
-
-        console.log({[name]: value})
     }
 
     const handleClick = (e)=>{
