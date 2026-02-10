@@ -7,7 +7,7 @@ export default function ShoppingItem({checked, id, title, number, setShoppingLis
     }
 
     function handleCheckboxChange(e){
-        const value = e.traget.checked;
+        const value = e.target.checked;
         setCheckedItems(prev => prev.map(item => item.id === id ? {...item, checked: value}: item))
     }
 
