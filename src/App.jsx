@@ -1,7 +1,6 @@
 import './App.css'
 import AddForm from './components/AddForm'
 import ShoppingList from './components/ShoppingList'
-import ShoppingItem from './components/ShoppingItem'
 import './style/style.css'
 import { useState } from 'react'
 

@@ -42,3 +42,8 @@ h1 {
     color: black;
     border: none;
 }
+
+.shopping-list{
+    display: flex;
+    flex-direction: column-reverse;
+}
