@@ -1,4 +1,6 @@
 export default function AddForm({ShoppingItem, setShopping, setShoppingList,}){
+
+    // Dette er funksjoner som jeg har hentet fra forelesning
     
     const handleChange = (e) =>{
         const {name, value} = e.target

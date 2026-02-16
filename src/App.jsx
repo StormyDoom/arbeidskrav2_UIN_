@@ -4,7 +4,7 @@ import ShoppingList from './components/ShoppingList'
 import './style/style.css'
 import { useState } from 'react'
 
-// Har jobbet med ToDos prosjekt fra forelesning og samarbeidet/jobbet med Fride Standal.
+// Har jobbet med ToDos prosjekt fra forelesning og Legodudes. Hvordan html og css er beygd opp har jeg samarbeidet med Fride Standal.
 
 function App() {
   
